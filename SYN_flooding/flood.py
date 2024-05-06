@@ -1,4 +1,7 @@
 from scapy.all import *
+import socket
+import netifaces
+
 
 def get_interface_name(destination_ip, destination_port):
     # Get a list of all network interfaces
