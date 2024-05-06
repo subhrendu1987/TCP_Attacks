@@ -2,12 +2,10 @@
 ## Initialize
 ```
 sudo docker-compose -f docker-compose-httpd.yml build
-sudo docker-compose -f docker-compose-strace.yml build
 ```
 or
 ```
 sudo docker compose -f docker-compose-httpd.yml build
-sudo docker compose -f docker-compose-strace.yml build
 ```
 ## SYN Flooding
 ### Launch http-server-container
