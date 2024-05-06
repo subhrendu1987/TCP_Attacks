@@ -36,7 +36,7 @@ def syn_flood(target_ip, target_port, interface="lo"):
 
 if __name__ == "__main__":
     target_ip = "127.0.0.1"
-    target_port = 1234
+    target_port = 8080
     interface_name = get_interface_name(target_ip, target_port)
     print("iface:",interface_name)
     print(f"Initiating SYN flooding attack on {target_ip}:{target_port}...")
