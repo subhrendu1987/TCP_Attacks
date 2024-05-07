@@ -8,9 +8,6 @@ services:
     networks:
       my_bridge_network:
         ipv4_address: 172.20.0.2
-    ports:
-      - "8080:80"
-      - "1234:1234" # For auxiliary communication
     volumes:
       - "./test-page:/usr/local/apache2/htdocs/"
       - "./docker_home:/home"
