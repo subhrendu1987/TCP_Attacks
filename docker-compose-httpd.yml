@@ -5,6 +5,9 @@ services:
       context: .
       dockerfile: Dockerfile.httpd
     container_name: httpd
+    networks:
+      my_bridge_network:
+        ipv4_address: 172.20.0.2
     ports:
       - "8080:80"
       - "1234:1234" # For auxiliary communication
@@ -12,3 +15,9 @@ services:
       - "./test-page:/usr/local/apache2/htdocs/"
       - "./docker_home:/home"
     restart: always
+networks:
+  my_bridge_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
