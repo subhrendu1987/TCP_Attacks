@@ -16,7 +16,11 @@ or
 ```
 sudo docker compose -f docker-compose-httpd.yml up -d
 ```
+## Rate limiting
+```
+bash RateLimiter.sh 
+```
 ### Launch flood script
 ```
-python3 flood.py 
+sudo python3 flood.py 
 ```

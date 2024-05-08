@@ -12,3 +12,4 @@ echo "Iface: $IFACE"
 # tc -n some_container qdisc add dev eth0 tbf rate 1024kbps 1024b limit 1024b
 # update tc 2023/05/19
 sudo tc -n $CNAME qdisc add dev eth0 handle 10: root tbf limit 1024 burst 2048 rate 1024
+sudo tc -n $CNAME qdisc add dev eth0 root netem delay 50ms
