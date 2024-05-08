@@ -7,8 +7,8 @@ services:
     container_name: httpd
     #mem_limit: "1g"
     #mem_reservation: "512m"
-    cpus: "1"
-    cpuset: "1"
+    #cpus: "1"
+    #cpuset: "1"
     networks:
       my_bridge_network:
         ipv4_address: 172.20.0.2
