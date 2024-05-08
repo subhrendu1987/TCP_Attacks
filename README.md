@@ -18,7 +18,7 @@ sudo docker compose -f docker-compose-httpd.yml up -d
 ```
 ## Rate limiting
 ```
-bash RateLimiter.sh 
+sudo bash RateLimiter.sh 
 ```
 ### Launch flood script
 ```
